@@ -235,9 +235,7 @@ body {
   }
   .list_box {
     padding-left: 12px;
-    *{
-      pointer-events: none;
-    }
+    
     &:hover {
       .list_img{
         display:none;
@@ -251,10 +249,12 @@ body {
     width: calc((100vw - 24px) * (10 / 12));
     margin-left: 16px;
     font-size: 14px;
+    pointer-events: none;
   }
   .list_date {
     font-size: 12px;
     width: calc((100vw - 24px) * (2 / 12));
+    pointer-events: none;
   }
 }
 
@@ -323,7 +323,7 @@ body {
   .list_text {
     width: calc((100vw - 24px));
     height: auto;
-    max-height: calc((50vh - 16px));
+    max-height: calc((40vh - 16px));
     overflow: scroll;
     position: fixed;
     left: 12px;

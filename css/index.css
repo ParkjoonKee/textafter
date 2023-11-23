@@ -223,9 +223,6 @@ body {
   .list_box {
     padding-left: 12px;
   }
-  .list_box * {
-    pointer-events: none;
-  }
   .list_box:hover .list_img {
     display: none;
   }
@@ -236,10 +233,12 @@ body {
     width: calc((100vw - 24px) * 0.8333333333);
     margin-left: 16px;
     font-size: 14px;
+    pointer-events: none;
   }
   .list_date {
     font-size: 12px;
     width: calc((100vw - 24px) * 0.1666666667);
+    pointer-events: none;
   }
 }
 .list_img {
@@ -306,7 +305,7 @@ body {
   .list_text {
     width: calc(100vw - 24px);
     height: auto;
-    max-height: calc(50vh - 16px);
+    max-height: calc(40vh - 16px);
     overflow: scroll;
     position: fixed;
     left: 12px;

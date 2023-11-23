@@ -917,7 +917,11 @@
     if(window.innerWidth<600){
       $(".list_text").hide();
         $(".list_box").click((e)=>{
-       $(e.target).children(".list_text").toggle();
+          $(".list_text").hide();
+       $(e.target).children(".list_text").show();
+        })
+        $(".x_bt").click(()=>{
+          $(".list_text").hide();
         })
     }
 </script>
